@@ -27,6 +27,7 @@ class StudentAdapter(val mContext:Context, val resId:Int, val mList:ArrayList<St
 //        row -> student_list_item XML에서 어댑터kt파일로 뷰를 가져오자.
         val nameTxt = row.findViewById<TextView>(R.id.nameTxt)
         val ageTxt = row.findViewById<TextView>(R.id.ageTxt)
+        val addressTxt = row.findViewById<TextView>(R.id.addressTxt)
 
 //        상황에 맞는 (=> postion에 들어있는 값에 맞는) 데이터를 출력
 
@@ -42,6 +43,9 @@ class StudentAdapter(val mContext:Context, val resId:Int, val mList:ArrayList<St
 //        현재년도 - 생년 + 1
 
         ageTxt.text = "${2020-studentData.birthYear+1}세"
+
+//        거주지 정보 표기
+        addressTxt.text = studentData.address
 
         return row
     }
