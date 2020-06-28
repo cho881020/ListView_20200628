@@ -24,6 +24,12 @@
             android:layout_marginTop="5dp"
             android:text="학생 나이 자리"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="~~시 ~~구" />
+
     </LinearLayout>
 
 </LinearLayout>
